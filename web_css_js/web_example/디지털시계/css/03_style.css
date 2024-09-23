@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg_morning.jpg) no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+}
+main article {
+  width: 35%;
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: #fff;
+}
+main article p {
+  font: 4vw/1 orbitron;
+  margin-bottom: 20px;
+}
+main article p strong {
+  opacity: 0.7;
+  font-weight: normal;
+}
+main article p em {
+  font: 1rem/1.2 arial;
+  letter-spacing: 2px;
+}
+main figure {
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  top: 40%;
+  right: -10%;
+  background: url(../img/phone_morning.png) no-repeat right top/contain;
+  color: #fff;
+}
+main figure .screen {
+  width: 534px;
+  height: 300px;
+  position: absolute;
+  top: 98px;
+  left: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font: 60px/1 orbitron;
+}
+main figure .screen em {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  font: 1.3rem/1 orbitron;
+  opacity: 0;
+}
+main figure .screen em.on {
+  opacity: 0.8;
+}
+main.morning {
+  background-image: url(../img/bg_morning.jpg);
+}
+main.morning figure {
+  background-image: url(../img/phone_morning.png);
+}
+main.afternoon {
+  background-image: url(../img/bg_afternoon.jpg);
+}
+main.afternoon figure {
+  background-image: url(../img/phone_afternoon.png);
+}
+main.evening {
+  background-image: url(../img/bg_evening.jpg);
+}
+main.evening figure {
+  background-image: url(../img/phone_evening.png);
+}
+main.night {
+  background-image: url(../img/bg_night.jpg);
+}
+main.night figure {
+  background-image: url(../img/phone_night.png);
+}
+main.afternoon article {
+  color: #555;
+}
+main.afternoon figure {
+  color: #555;
+}
+
+@media screen and (max-width: 1600px) {
+  main figure {
+    transform-origin: right center;
+    transform: scale(0.8);
+    margin-top: -150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main article {
+    width: 100%;
+    top: 5%;
+    left: 0;
+    padding: 10%;
+  }
+  main figure {
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 800px) {
+  main article {
+    top: 0;
+  }
+  main figure {
+    transform: scale(0.6);
+    right: -20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main article {
+    top: 20%;
+    color: #555;
+  }
+  main article p {
+    font-size: 40px;
+  }
+  main figure {
+    width: 100%;
+    height: 50%;
+    background: none !important;
+    transform: scale(1);
+    right: 0;
+    margin-top: 0;
+    color: #fff !important;
+  }
+  main figure .screen {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  main figure .screen span {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=03_style.css.map */
