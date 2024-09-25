@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  padding: 10vh 10vw;
+}
+main h1 {
+  font: 200 7vmax/1 raleway;
+  color: #555;
+  margin-bottom: 60px;
+}
+main section {
+  width: 100%;
+}
+main section article {
+  width: 100%;
+  padding: 50px 0px;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section article h2 {
+  width: 30%;
+  font: 300 30px/1 raleway;
+  color: #777;
+}
+main section article .txt {
+  width: 38%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  font-size: 1rem;
+  word-break: break-all;
+}
+main section article .txt span {
+  font: 300 0.8rem/1 orbitron;
+  letter-spacing: 1px;
+  color: orange;
+}
+main section article .pic {
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+}
+main section article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.4);
+}
+main section article:nth-of-type(2n-1) {
+  flex-direction: row-reverse;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 100px;
+}
+aside .con {
+  width: 100%;
+  height: 100%;
+}
+aside .con iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+aside button {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #555;
+}
+
+@media screen and (max-width: 899px) {
+  main section article h2 {
+    width: 48%;
+  }
+  main section article .txt {
+    width: 48%;
+  }
+  main section article .pic {
+    width: 100%;
+    margin-top: 30px;
+  }
+  main section article:nth-of-type(2n-1) {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 599px) {
+  main section article h2 {
+    width: 100%;
+  }
+  main section article .txt {
+    width: 100%;
+    margin-top: 30px;
+  }
+  main section article .pic {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=14_style.css.map */

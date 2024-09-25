@@ -1,0 +1,122 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+main {
+	padding: 10vh 10vw;
+
+	h1 {
+		font: 200 7vmax/1 raleway;
+		color: #555;
+		margin-bottom: 60px;
+	}
+	section {
+		width: 100%;
+
+		article {
+			width: 100%;
+			padding: 50px 0px;
+			border-bottom: 1px solid #bbb;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			h2 {
+				width: 30%;
+				font: 300 30px/1 raleway;
+				color: #777;
+			}
+			.txt {
+				width: 38%;
+				display: flex;
+				flex-wrap: wrap;
+				align-content: space-between;
+				font-size: 1rem;
+				word-break: break-all; // 단어 단위가 아닌, 글자 단위로 줄바꿈 처리
+				span {
+					font: 300 0.8rem/1 orbitron;
+					letter-spacing: 1px;
+					color: orange;
+				}
+			}
+			.pic {
+				width: 30%;
+				height: 200px;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					transform: scale(1.4);
+				}
+			}
+			&:nth-of-type(2n-1) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(10px);
+	padding: 100px;
+
+	.con {
+		width: 100%;
+		height: 100%;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	button {
+		position: absolute;
+		top: 5vh;
+		right: 5vw;
+		background: transparent;
+		border: none;
+		font-size: 1rem;
+		color: #555;
+	}
+}
+
+@media screen and (max-width: 899px) {
+	main section article {
+		h2 {
+			width: 48%;
+		}
+		.txt {
+			width: 48%;
+		}
+		.pic {
+			width: 100%;
+			margin-top: 30px;
+		}
+		&:nth-of-type(2n-1) {
+			flex-direction: row;
+		}
+	}
+}
+
+@media screen and (max-width: 599px) {
+	main section article {
+		h2 {
+			width: 100%;
+		}
+		.txt {
+			width: 100%;
+			margin-top: 30px;
+		}
+		.pic {
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+}
