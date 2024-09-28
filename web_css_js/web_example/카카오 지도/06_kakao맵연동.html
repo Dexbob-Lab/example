@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KAKAO맵 연동 (리셋 버튼제어)</title>
+		<link rel="stylesheet" href="css/06_style.css" />
+		<script type="module" src="js/06_script.js"></script>
+		<script
+			type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac503148bd7834dadad3522e4a215ede"
+		></script>
+	</head>
+	<body>
+		<main>
+			<h1>KAKAO MAP</h1>
+
+			<button class="trafficToggle">Traffic ON</button>
+			<button class="viewToggle">Roadview ON</button>
+			<button class="btnReset">Reset</button>
+
+			<section class="frame">
+				<figure id="map" class="on"></figure>
+				<figure id="view"></figure>
+			</section>
+		</main>
+	</body>
+</html>
