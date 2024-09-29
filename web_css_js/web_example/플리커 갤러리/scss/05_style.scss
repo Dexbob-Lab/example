@@ -1,0 +1,208 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+main {
+	width: 100%;
+	padding: 10vh 10vw;
+
+	h1 {
+		font: 100 7vmax/1 "raleway";
+		color: #555;
+		margin-bottom: 60px;
+	}
+
+	.controls {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		nav {
+			margin-bottom: 40px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+
+			button {
+				cursor: pointer;
+				display: inline-block;
+				padding: 10px 20px;
+				border-radius: 5px;
+				border: none;
+				font: 500 0.6rem/1 orbitron;
+				color: #fff;
+				opacity: 0.8;
+				transition: 0.5s;
+
+				&:hover {
+					transform: scale(1.2);
+					opacity: 1;
+				}
+
+				&:nth-of-type(1) {
+					background: linear-gradient(45deg, aqua, #49d3fd);
+					box-shadow: 10px 10px 20px rgba(0, 255, 255, 0.5);
+				}
+				&:nth-of-type(2) {
+					background: linear-gradient(45deg, hotpink, #df21df);
+					box-shadow: 10px 10px 20px rgba(255, 0, 234, 0.5);
+				}
+			}
+		}
+		.searchBox {
+			input {
+				padding: 4px 7px;
+				border: 1px solid #bbb;
+				border-radius: 3px;
+			}
+			button {
+				cursor: pointer;
+				width: 80px;
+				height: 26px;
+				background: #444;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+				border-radius: 3px;
+				border: none;
+				font: 600 0.6rem/25px "orbitron";
+				color: #fff;
+				letter-spacing: 1px;
+				text-align: center;
+				position: relative;
+				top: -1px;
+			}
+		}
+	}
+
+	.list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		li {
+			width: 22%;
+			margin-bottom: 70px;
+
+			.pic {
+				cursor: pointer;
+				width: 100%;
+				height: 20vw;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			h2 {
+				border-top: 1px solid #bbb;
+				border-bottom: 1px solid #bbb;
+				margin: 14px 0px;
+				padding: 14px 0px;
+				font: 300 0.8rem/1.2 "raleway";
+				color: #222;
+			}
+
+			.profile {
+				width: 100%;
+				display: flex;
+				align-items: flex-end;
+				gap: 10px;
+
+				img {
+					width: 30px;
+				}
+				span {
+					cursor: pointer;
+					font: 300 0.5rem/1 "orbitron";
+					color: orange;
+					display: inline-block;
+					transition: 0.5s;
+
+					&:hover {
+						color: hotpink;
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	padding: 50px;
+
+	.con {
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.btnClose {
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		color: #555;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	main {
+		.list {
+			li {
+				width: 32%;
+
+				.pic {
+					height: 30vw;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 699px) {
+	main {
+		.list {
+			li {
+				width: 48%;
+
+				.pic {
+					height: 50vw;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 399px) {
+	main {
+		h1 {
+			font-size: 5vmax;
+		}
+		.list {
+			li {
+				width: 100%;
+
+				.pic {
+					height: 70vw;
+				}
+			}
+		}
+	}
+}
