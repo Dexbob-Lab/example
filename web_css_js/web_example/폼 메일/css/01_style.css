@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hide {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+section {
+  padding: 10vh 10vw;
+}
+section h1 {
+  font: 100 8vmax/1 "raleway";
+  color: #333;
+  margin-bottom: 60px;
+}
+section form {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section form div {
+  width: 46%;
+}
+section form div label {
+  width: 100%;
+  font: 400 1rem/1 "orbitron";
+  margin-bottom: 20px;
+  display: block;
+}
+section form div input[type=text],
+section form div input[type=email] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #555;
+  padding: 10px 0px;
+  outline: 0;
+  margin-bottom: 10px;
+}
+section form .msgBox {
+  width: 100%;
+  margin-top: 50px;
+}
+section form .msgBox label {
+  display: block;
+}
+section form .msgBox textarea {
+  width: 100%;
+  resize: none;
+  padding: 20px 0px;
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #555;
+}
+section form nav {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+section form nav input {
+  border: none;
+  background: #333;
+  padding: 10px 60px;
+  font: 600 0.8rem/1 "orbitron";
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=01_style.css.map */
