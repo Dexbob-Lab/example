@@ -6,11 +6,13 @@
 
 #### 초보자를 위한 파이썬 300제
 
+- 사이트: https://wikidocs.net/book/922
 - 파일명: 01_basic_ex300.ipynb => 완료(24/10/2)
 
 ### 코딩도장
 
-- 파일명: 01_코딩도장_level_1.ipynb => 7문제 완료(24/10/8)
+- 사이트: https://codingdojang.com/
+- 파일명: 01\_코딩도장\_level_1.ipynb => 11문제 완료(24/10/9)
 
 ## 웹 (html & css & js)
 
