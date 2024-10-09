@@ -12,7 +12,7 @@
 ### 코딩도장
 
 - 사이트: https://codingdojang.com/
-- 파일명: 01\_코딩도장\_level_1.ipynb => 11문제 완료(24/10/9)
+- 파일명: 01\_코딩도장\_level_1.ipynb => 14문제 완료(24/10/10)
 
 ## 웹 (html & css & js)
 
